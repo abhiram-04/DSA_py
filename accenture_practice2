@@ -1,0 +1,13 @@
+def remove_zeros(stri):
+    res = []
+    res1 = []
+    for i in stri.split():
+        if i == '0':
+            res1.append(i)
+        else:
+            res.append(i)
+    string1=' '.join(res + res1)
+    print(string1)
+
+string = input("enter the string of numbers: ")
+remove_zeros(string)
