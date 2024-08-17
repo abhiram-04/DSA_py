@@ -1,0 +1,11 @@
+def noofstring(stri,no):
+    li = []
+    ls = []
+    for i in stri.split():
+        li.append(i)
+    ls = ' '.join(li[:no])
+    print(ls)
+    
+string1 = input("enter the string")
+no = int(input("enter the number"))
+noofstring(string1,no)
