@@ -1,0 +1,18 @@
+def ratfood (rat,unii,n,arrn):
+    if n == 0:
+        return -1
+    foodreq = rat*unii
+    summ = 0
+    count = 0
+    for i in arrn:
+        summ = summ+i
+        count = count+1
+        if summ >= foodreq:
+            break
+    print(count)
+
+rat = int(input("r: "))
+unii = int(input("unit: "))
+n = int(input("n: "))
+arrn = list(map(int,input("enter the array elements: ").split()))
+ratfood(rat,unii,n,arrn)
